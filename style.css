@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+    font-size: 62.5%;
+}
+
+.container {
+    background: rgb(94, 59, 233);
+    background: linear-gradient(43deg, rgba(94, 59, 233, 1) 28%, rgba(243, 0, 255, 1) 62%);
+    width: 100vw;
+    height: 100vh;
+    padding: 5.5rem 0;
+}
+
+.form-container {
+    width: 25%;
+    margin: auto;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    height: 90%;
+    padding: 2.5rem 1rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+}
+
+.formBox {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 90%;
+    position: relative;
+    padding: 1rem 0;
+    margin: 3rem 0rem;
+}
+
+label {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+input {
+    border: none;
+    outline: none;
+    background: transparent;
+    color: gray;
+    border-bottom: 1px solid gray;
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+    padding-bottom: 0.5rem;
+    padding-left: 0.2rem;
+    width: 90%;
+}
+
+.forgotPassword {
+    position: absolute;
+    right: 35px;
+    bottom: -10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    font-weight: 600;
+    border-bottom: 1px solid transparent;
+    padding-bottom: 4px;
+}
+
+.forgotPassword:hover {
+    border-bottom: 1px solid gray;
+}
+
+.btn {
+    background: rgb(110, 202, 223);
+    background: linear-gradient(90deg, rgba(110, 202, 223, 1) 8%, rgba(225, 67, 245, 1) 45%, rgba(179, 121, 236, 1) 79%);
+    width: 90%;
+    border: none;
+    padding: 0.8rem 0;
+    font-size: 2rem;
+    color: white;
+    font-weight: bold;
+    border-radius: 100px;
+}
+
+.btn:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.signUpOrBox {
+    margin: 3rem 0;
+    width: 90%;
+    text-align: center;
+}
+
+.signup {
+    color: gray;
+    font-size: 1.5rem;
+}
+
+.socialmedialbox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 3rem;
+    width: 70%;
+    margin: auto;
+    margin-top: 5rem;
+}
+
+.fa-facebook {
+    color: #3b5998;
+    font-size: 4.3rem;
+}
+
+.fa-twitter {
+    color: white;
+    background-color: #00acee;
+    padding: 0.5rem;
+    border-radius: 50%;
+}
+
+.fa-google {
+    color: white;
+    background-color: rgb(232, 34, 34);
+    padding: 0.5rem;
+    border-radius: 50%;
+}
+
+.fa-brands:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+
+/* ########################################## */
+/* -------------- Media Query --------------  */
+/* ########################################## */
+
+@media (min-width: 1201px) {}
+
+@media (max-width: 1200px) and (min-width: 1025px) {}
+
+@media (max-width: 1024px) and (min-width: 769px) {
+    .form-container {
+        width: 44vw;
+    }
+}
+
+@media (max-width: 768px) and (min-width: 481px) {
+    .form-container {
+        width: 66vw;
+    }
+}
+
+@media (max-width: 480px) and (min-width: 320px) {
+    .form-container {
+        width: 88vw;
+    }
+}
